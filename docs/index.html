@@ -5,7 +5,7 @@ title: nbds_colab
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Literate programming for data science projects using jupytemplate, nbdev and Google Colaboratory"
+summary: "Literate programming template for data science projects using jupytemplate, nbdev and Google Colaboratory"
 ---
 <!--
 
@@ -25,65 +25,98 @@ summary: "Literate programming for data science projects using jupytemplate, nbd
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This file will become your README and also the index of your documentation.</p>
+<p>nbds_colab is a template repository designed for data science projects that want to use with the fastai nbdev literate programming environment with jupytempates all on Google Colaboratory and Google Drive. It has been generated and adapted from the <a href="https://github.com/fastai/nbdev_template">fastai.nbdev_template</a> and xstreamrl <a href="">jupytemplate</a>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install">&#182;</a></h2>
+<h2 id="Getting-started">Getting started<a class="anchor-link" href="#Getting-started">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install nbds_colab</code></p>
+<p>The folowing assumes you are familiar with fastai <a href="">nbdev</a>, <a href="">jupytemplates</a>, Google Colaboratory (Colab), Google Drive and have an active GitHub account.</p>
+<ul>
+<li><p>To begin a new data science project using nbds_colab you need to be logged in to your github account and then simply click here <a href="">nbdev-colab template</a>. Fill in the requested info and click 'Create repository from template', and a new GitHub repo with all the template code will be created in your GitHub.</p>
+</li>
+<li><p>From GitHub, edit the <code>settings.ini</code>file of the new repo with your own personal and package information as described in the nbdev <a href="">docs</a> and <a href="">tutorial</a>. Additionally add any dependencies to the 'requirements' setting (requirements = dep1, dep2 etc) also in settings.ini.</p>
+</li>
+<li><p>Activate GitHub Pages to display automatic documentation: click on settings, then scroll down to GitHub Pages and select 'master branch/docs folder'. Edit the repo description by adding the auto-generated GitHub Pages link to box next to the repo description at the top of the page.</p>
+</li>
+<li><p>Finally clone the new repo to your Google Drive. A detailed description of how, and helpful tools to accomplish this, are provided by nbds-colabs's sister package, <code>nbd_colab</code>. Go to <a href="">nbd_colab</a> and follow the instructions on how to install nbd_colab, clone the new project repo to your Google Drive and then configure it for GitHub integration.</p>
+</li>
+<li><p>You're ready to go.</p>
+</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use">&#182;</a></h2>
+<h2 id="Using-the-Template-repo">Using the Template repo<a class="anchor-link" href="#Using-the-Template-repo">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Fill me in please! Don't forget code examples:</p>
+<p>You should now have a project directory somewhere permanant on your Google Drive and linked to a remote repo on GitHub. Great that is the tricky bit!</p>
+<p>You can now open the project notebooks (.ipynb files with names prefixed with '00' to '16') in Google Colab and edit them as normal. Nbdev enables literate programming through automatic documentation generation from jupyter notebooks. If you are not familiars with how this works read the nbdev <a href="">docs</a> or the excellent get started <a href="">tutorial</a>. An approach, helpful code snippets and a troubleshooting guide all aimed at smooth workflow integration of nbdev, Colab, Drive and GitHub ar eprovided by <a href="">nbde_colab</a>.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-data-science-templates">The data science templates<a class="anchor-link" href="#The-data-science-templates">&#182;</a></h2>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
 </div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The jupyter notebook data science templates are the work of <a href="https://github.com/donlelef/jupytemplate">xstreamsrl jupytemplate</a>. See xtreamsrl <a href="https://towardsdatascience.com/stop-copy-pasting-notebooks-embrace-jupyter-templates-6bd7b6c00b94">blog post</a> for the rational behind the templates, but in brief, they aim to provide a greater degree of structure and standardization to data scioence projects. Here we take the natural next step and place them into a literate programming environment.</p>
+<p>Just dive in and edit them as needed.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Template-repo-structure">Template repo structure<a class="anchor-link" href="#Template-repo-structure">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The template repo is structured to allow large data science projects to be broken down into manageable units, each with its own notebook. You can put anything anywhere but if you are going to run with the already established repo structure our idea of what should go where is as follows:</p>
+<ul>
+<li><p>00core: core functionality for the project (optional).</p>
+</li>
+<li><p><code>01_dstemplate1</code> - <code>03_</code>: the data science templates to edit with the project code. Separate out different aspects - e.g. different approaches or models, into to different notebooks. These nbs import code from <code>11_common</code>, <code>12_vis</code>, <code>13_dataproc</code> and <code>14_data</code>. There is space from <code>04_</code> - <code>07_</code> to add more!</p>
+</li>
+<li><p><code>08_ensemble1</code> - <code>09_</code>: code to ensemble different models from <code>01_dstemplate</code> to '03_`.</p>
+</li>
+<li><p><code>10_final</code>: the final project outcome or model.</p>
+</li>
+<li><p><code>11_common</code>: code, classes and functions shared between template files.</p>
+</li>
+<li><p><code>12_vis</code>: plots, image manipulation and code required for data visualization</p>
+</li>
+<li><p><code>13_dataproc</code>: shared data processing , preprocessing and feature engineering functionality</p>
+</li>
+<li><p><code>14_data</code>: data aquisition, initial processing and source description(s)</p>
+</li>
+<li><p><code>15_refs</code>: place all the project references and citations in one place for quick lookup</p>
+</li>
+</ul>
+<p>You can rename the dstemplate, ensemble and final notebooks to something more meaningful for your project but remember to keep the nbdev naming convention of a double digit following by the name of your choice, e.g. <code>00_your_new_name.ipynb</code>. Don't forget to ammend associated import statements as well.</p>
+<p>Notebooks can also be deleted and new ones added but the boilerplate code at the top must always be present fro smooth integration with Google Drive, nbdev and GitHub. The nbd_colab <a href="">docs</a> describes how to add a new notebook as well as generally how to manage the project entirely from Google Colab.</p>
 
+</div>
+</div>
 </div>
     {% endraw %}
 </div>
