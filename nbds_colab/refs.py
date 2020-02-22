@@ -5,4 +5,4 @@ __all__ = ['refs_test']
 # Cell
 def refs_test(test_msg):
   "Function refs"
-  print(test_msg)
+  return test_msg

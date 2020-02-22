@@ -18,4 +18,4 @@ from .dstemplate3 import *
 # Cell
 def ensemble2_test(test_msg):
   "Function ensemble2"
-  print(test_msg)
+  return test_msg

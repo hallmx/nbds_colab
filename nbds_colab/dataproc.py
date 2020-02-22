@@ -5,4 +5,4 @@ __all__ = ['dataproc_test']
 # Cell
 def dataproc_test(test_msg):
   "Function dataproc"
-  print(test_msg)
+  return test_msg

@@ -5,4 +5,4 @@ __all__ = ['final_test']
 # Cell
 def final_test(test_msg):
   "Function final"
-  print(test_msg)
+  return test_msg

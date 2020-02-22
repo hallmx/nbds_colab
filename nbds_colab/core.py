@@ -10,4 +10,4 @@ from .data import *
 # Cell
 def core_test(test_msg):
   "Function core"
-  print(test_msg)
+  return len(test_msg)

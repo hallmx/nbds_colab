@@ -5,4 +5,4 @@ __all__ = ['common_test']
 # Cell
 def common_test(test_msg):
   "Function common"
-  print(test_msg)
+  return test_msg

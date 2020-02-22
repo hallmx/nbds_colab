@@ -30,7 +30,7 @@ summary: "Shared data processing and preprocessing functionality."
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">dataproc_test</span><span class="p">(</span><span class="n">test_msg</span><span class="p">):</span>
   <span class="s2">&quot;Function dataproc&quot;</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">test_msg</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">test_msg</span>
 </pre></div>
 
     </div>
@@ -64,7 +64,7 @@ summary: "Shared data processing and preprocessing functionality."
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataproc_test</span><span class="p">(</span><span class="s1">&#39;dataproc&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">dataproc_test</span><span class="p">(</span><span class="s1">&#39;dataproc&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;dataproc&#39;</span>
 </pre></div>
 
     </div>

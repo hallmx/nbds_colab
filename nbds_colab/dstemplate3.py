@@ -5,4 +5,4 @@ __all__ = ['template3_test']
 # Cell
 def template3_test(test_msg):
   "Function template3"
-  print(test_msg)
+  return test_msg

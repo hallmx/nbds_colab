@@ -5,4 +5,4 @@ __all__ = ['vis_test']
 # Cell
 def vis_test(test_msg):
   "Function vis"
-  print(test_msg)
+  return test_msg

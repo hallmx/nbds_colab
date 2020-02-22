@@ -5,4 +5,4 @@ __all__ = ['ensemble1_test']
 # Cell
 def ensemble1_test(test_msg):
   "Function ensemble1"
-  print(test_msg)
+  return test_msg
