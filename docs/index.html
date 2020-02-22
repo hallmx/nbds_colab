@@ -40,9 +40,9 @@ summary: "Literate programming template for data science projects using nbdev, j
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The following assumes you are familiar with <code>fastai.nbdev</code>, <code>jupytemplates</code>, Google Colaboratory (Colab), Google Drive and have an active GitHub account.</p>
 <ul>
-<li><p>To begin a new data science project using nbds_colab you need to be logged in to your GitHub account and then click here <a href="">nbds_colab template</a>. Fill in the requested info and click 'Create repository from template', and a new GitHub repo with all the template code will be created in your GitHub.</p>
+<li><p>To begin a new data science project using nbds_colab you need to be logged in to your GitHub account and then click here <a href="https://github.com/hallmx/nbds_colab/generate">nbds_colab template</a>. Fill in the requested info and click 'Create repository from template', and a new GitHub repo with all the template code will be created in your GitHub.</p>
 </li>
-<li><p>From GitHub, edit the <code>settings.ini</code> file of the new repo with your own personal and package information as described in the nbdev <a href="">docs</a> and <a href="">tutorial</a>. Additionally add any dependencies to the 'requirements' setting (requirements = dep1, dep2 etc) also in settings.ini.</p>
+<li><p>From GitHub, edit the <code>settings.ini</code> file of the new repo with your own personal and package information as described in the nbdev <a href="http://nbdev.fast.ai/">docs</a> and <a href="http://nbdev.fast.ai/tutorial/">tutorial</a>. Additionally add any dependencies to the 'requirements' setting (requirements = dep1, dep2 etc) also in settings.ini.</p>
 </li>
 <li><p>Activate GitHub Pages to display automatic documentation: click on settings, then scroll down to GitHub Pages and select 'master branch/docs folder'. Edit the repo description by adding the auto-generated GitHub Pages link to the box next to the repo description at the top of the page.</p>
 </li>
@@ -64,7 +64,7 @@ summary: "Literate programming template for data science projects using nbdev, j
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You should now have a project directory somewhere permanant on your Google Drive and linked to a remote repo on GitHub. Great, that was the tricky bit!</p>
-<p>You can now open the project notebooks (.ipynb files with names prefixed with '00' to '16') in Google Colab and edit them as normal. Nbdev enables literate programming through automatic documentation generation from jupyter notebooks. If you are not familiars with how this works read the nbdev <a href="">docs</a> or the excellent <a href="">get started tutorial</a>.</p>
+<p>You can now open the project notebooks (.ipynb files with names prefixed with '00' to '16') in Google Colab and edit them as normal. Nbdev enables literate programming through automatic documentation generation from jupyter notebooks. If you are not familiars with how this works read the nbdev <a href="http://nbdev.fast.ai/">docs</a> and/or excellent <a href="http://nbdev.fast.ai/tutorial/">get started tutorial</a>.</p>
 <p>An approach, helpful code snippets and a troubleshooting guide all aimed at smooth workflow integration between nbdev, Colab, Drive and GitHub are provided by <code>nbd_colab</code>.</p>
 
 </div>
@@ -78,7 +78,7 @@ summary: "Literate programming template for data science projects using nbdev, j
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The jupyter notebook data science templates are the work of <a href="https://github.com/donlelef/jupytemplate">xstreamsrl's jupytemplate</a> project. See xtreamsrl <a href="https://towardsdatascience.com/stop-copy-pasting-notebooks-embrace-jupyter-templates-6bd7b6c00b94">blog post</a> for the rationale behind the templates, but in brief, they aim to provide a greater degree of structure and standardization to data science projects. Here we take the natural next step and place them into a literate programming environment.</p>
+<p>The jupyter notebook data science templates are the work of <a href="https://github.com/xtreamsrl/jupytemplate">xstreamsrl's jupytemplate</a> project. See xtreamsrl <a href="https://towardsdatascience.com/stop-copy-pasting-notebooks-embrace-jupyter-templates-6bd7b6c00b94">blog post</a> for the rationale behind the templates, but in brief, they aim to provide a greater degree of structure and standardization to data science projects. Here we take the natural next step and place them into a literate programming environment.</p>
 <p>Just dive in and edit them as needed.</p>
 
 </div>
@@ -114,7 +114,7 @@ summary: "Literate programming template for data science projects using nbdev, j
 </li>
 </ul>
 <p>You can rename the 'dstemplate', 'ensemble' and 'final' notebooks to something more meaningful for your project but remember to keep the nbdev naming convention of progressive double digits following by the new name. Xstreamrl recommend also including the authors initials - so something like, e.g. <code>00_AB_data_exploration.ipynb</code> or <code>AB_00_data_exploration.ipynb</code>. Don't forget to ammend any associated import statements to the new nb name as well!</p>
-<p>Notebooks can also be deleted and new ones added but the boilerplate code must always be present at the top of each nb for nbdev, Colab and Drive to play nicely together. The nbd_colab <a href="">docs</a> describes how to add a new notebook to an nbdev project as well as generally how to manage the project entirely from Google Colab.</p>
+<p>Notebooks can also be deleted and new ones added but the boilerplate code must always be present at the top of each nb for nbdev, Colab and Drive to play nicely together. The nbd_colab <a href="https://github.com/hallmx/nbd_colab">docs</a> describes how to add a new notebook to an nbdev project as well as generally how to manage the project entirely from Google Colab.</p>
 
 </div>
 </div>

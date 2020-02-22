@@ -22,7 +22,7 @@ entries:
       title: DSTemplate3
       url: /dstemplate3
     - output: web,pdf
-      title: Ensembles1
+      title: Ensemble1
       url: /ensemble1
     - output: web,pdf
       title: Ensemble2
