@@ -5,7 +5,7 @@ title: nbds_colab
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Literate programming for data science using nbdev, jupytemplate and Google Colaboratory"
+summary: "Literate programming for data science using nbdev, Jupytemplate and Google Colaboratory"
 ---
 <!--
 
@@ -25,13 +25,13 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nbds_colab is a template repository for small to medium sized data science projects which use the nbdev programming system and Google Colaboratory. It combines the best features of the following to give a complete low friction workflow for your project, from first code to package release:</p>
+<p>nbds_colab is a template repository for small to medium sized data science projects which use the nbdev programming system from within Google Colaboratory. It combines the best features of the following to give quick project start-up followed by a complete low friction workflow, from first code to package release:</p>
 <ul>
 <li><p>Fastai.nbdev - exploratory programming, automated documentation generation, integrated testing and easy PyPi package release <a href="https://github.com/fastai/nbdev//">nbdev</a></p>
 </li>
 <li><p>Google Colaboratory &amp; Drive - low cost cloud computing with acceleration <a href="https://colab.research.google.com/">Colaboratory</a></p>
 </li>
-<li><p>Jupytemplate - standardized notebooks for data science <a href="https://github.com/xtreamsrl/jupytemplate">xstreamsrl</a></p>
+<li><p>Jupytemplate - standardized notebooks for data science <a href="https://github.com/xtreamsrl/jupytemplate">xstreamsrl Jupytemplate</a></p>
 </li>
 <li><p>Full GitHub integration</p>
 </li>
@@ -48,7 +48,7 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The following assumes a working knowledge of the nbdev exploratory programming system, Jupiter notebooks, Google Colaboratory (Colab), Google Drive and GitHub. For more information on nbdev view the <a href="http://nbdev.fast.ai/">nbdev documentation</a> and on how nbdev works with Google Colaboratory, the <a href="(https://github.com/hallmx/nbd_colab">nbd_colab docs</a>.</p>
+<p>The following assumes a working knowledge of the nbdev exploratory programming system, Jupiter notebooks, Google Colaboratory (Colab), Google Drive and GitHub. For more information on nbdev read the <a href="http://nbdev.fast.ai/">nbdev documentation</a> and on how nbdev works with Google Colaboratory, the <a href="(https://github.com/hallmx/nbd_colab">nbd_colab docs</a>.</p>
 <ul>
 <li><p>Make sure you are logged in to your GitHub account then click <a href="https://github.com/hallmx/nbds_colab/generate">nbds_colab_template</a> to go to the template repo on GitHub. Enter a name for your project and click 'Create repository from template'. A new repo based on the template will be created in your GitHUb.</p>
 </li>
@@ -90,7 +90,7 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 </li>
 <li><p><code>13_dataproc</code>: shared data processing , preprocessing and feature engineering functionality</p>
 </li>
-<li><p><code>14_data</code>: data aquisition, initial processing and source description(s)</p>
+<li><p><code>14_data</code>: data acquisition, initial processing and source description(s)</p>
 </li>
 <li><p><code>15_refs</code>: place all the project references and citations in one place for quick lookup</p>
 </li>
@@ -111,16 +111,16 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 <ul>
 <li><p>Delete unwanted notebooks (simply remove them from Google Drive) and add new notebooks (see the nbd_colab documentation on how to do this) so that the repo has the desired project structure.</p>
 </li>
-<li><p>You can rename the 'dstemplate', 'ensemble' and 'final' notebooks to something more meaningful for your project but remember to keep the nbdev naming convention of progressive double digits following by the new name. If you work in a team, also including the authors initials - so something like, e.g. '00_AB_data_exploration.ipynb' or 'AB_00_data_exploration.ipynb'. Don't forget to ammend any associated import statements to the new nb name as well!</p>
+<li><p>You can rename the 'dstemplate', 'ensemble' and 'final' notebooks to something more meaningful for your project but remember to keep the nbdev naming convention of progressive double digits following by the new name. If you work in a team, also including the authors initials - so something like, e.g. '00_AB_data_exploration.ipynb' or 'AB_00_data_exploration.ipynb'. Don't forget to ammend any associated import statements to the new name as well!</p>
 </li>
 <li><p>Update all <code>#default_exp</code> flags with the new notebook name and don't forget to update all local imports similarly. Remove unwanted imports and add new ones as required.</p>
 </li>
-<li><p>Uncomment the <code>%cd command</code> just below library installs and change the placeholder text to your project directory. Run this cell every time you reload the notebook so that local imports work as expected.</p>
+<li><p>Uncomment the <code>%cd command</code> just below library installs and change the placeholder text to the name of the project directory. Run this cell every time you reload the notebook so that local imports work as expected.</p>
 </li>
 <li><p>Customize test_flags for development. As well as the built in <code>all_flags</code> the template ships with the following custom test_flags: <code>test_flag_colab</code>, <code>test_flag_deps</code>, <code>test_flag_GPU</code>, <code>test_flag_slow</code>, <code>test_flag_large</code>, and <code>test_flag_other</code>. Use these or create your own by editing settings.ini.</p>
 </li>
 </ul>
-<p>Now you can build the project library with <code>nbdev_build_lib</code> and documentation with <code>nbdev_build_docs</code> as described in the nbdev <a href="http://nbdev.fast.ai/">documentation</a> and <a href="https://github.com/hallmx/nbd_colab">nbd_colab docs</a>. Don't forget to check for any diffs with <code>nbdev_diffs_nbs</code> and run tests with <code>nbdev_test_nbs</code>. If all is well, push the customized template with an 'init commit' message, or the like, to GitHub. After pushing, go to the remote repo's GitHub Pages and you should see the starter documentation for you project!</p>
+<p>Now you can build the project library with <code>nbdev_build_lib</code> and documentation with <code>nbdev_build_docs</code> as described in the nbdev <a href="http://nbdev.fast.ai/">documentation</a> and <a href="https://github.com/hallmx/nbd_colab">nbd_colab docs</a>. Don't forget to check for any diffs with <code>nbdev_diffs_nbs</code> and run tests with <code>nbdev_test_nbs</code>. If all is well, push the customized template with an 'init commit' message, or the like, to GitHub. After pushing, go to the remote repo's GitHub Pages and you should be able to view the starter documentation for you project!</p>
 
 </div>
 </div>
