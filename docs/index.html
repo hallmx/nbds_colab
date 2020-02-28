@@ -31,7 +31,7 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 </li>
 <li><p>Google Colaboratory &amp; Drive - low cost cloud computing with acceleration <a href="https://colab.research.google.com/">Colaboratory</a></p>
 </li>
-<li><p>Jupytemplate - standardized notebooks for data science <a href="https://github.com/xtreamsrl/jupytemplate">Xstreamrl</a></p>
+<li><p>Jupytemplate - standardized notebooks for data science <a href="https://github.com/xtreamsrl/jupytemplate">xstreamsrl</a></p>
 </li>
 <li><p>Full GitHub integration</p>
 </li>
@@ -48,18 +48,18 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The following assumes a working knowledge of the nbdev exploratory programming system, jupiter notebooks, Google Colaboratory (Colab), Google Drive and GitHub. For more information on nbdev view the <a href="http://nbdev.fast.ai/">nbdev documentation</a> and on how nbdev works with Google Colaboratory <a href="(https://github.com/hallmx/nbd_colab">nbd_colab docs</a>.</p>
+<p>The following assumes a working knowledge of the nbdev exploratory programming system, Jupiter notebooks, Google Colaboratory (Colab), Google Drive and GitHub. For more information on nbdev view the <a href="http://nbdev.fast.ai/">nbdev documentation</a> and on how nbdev works with Google Colaboratory, the <a href="(https://github.com/hallmx/nbd_colab">nbd_colab docs</a>.</p>
 <ul>
 <li><p>Make sure you are logged in to your GitHub account then click <a href="https://github.com/hallmx/nbds_colab/generate">nbds_colab_template</a> to go to the template repo on GitHub. Enter a name for your project and click 'Create repository from template'. A new repo based on the template will be created in your GitHUb.</p>
 </li>
-<li><p>From GitHub, edit the <code>settings.ini</code> file of the new repo with your own personal and package information as described in the nbdev <a href="http://nbdev.fast.ai/">documentation</a> and <a href="http://nbdev.fast.ai/tutorial/">tutorial</a>. Add any dependencies to the 'requirements' setting (requirements = dep1, dep2 etc). A set of test_flags have already been added (tst_flags = test_flag_colab|test_flag_deps|test_flag_GPU|test_flag_slow|test_flag_large|test_flag_other). These can be customized if needed. Commit the new <code>settings.ini</code> to save the changes.</p>
+<li><p>From GitHub, edit the <code>settings.ini</code> file of the new repo with your own personal and package information as described in the nbdev <a href="http://nbdev.fast.ai/">documentation</a> and <a href="http://nbdev.fast.ai/tutorial/">tutorial</a>. Add any dependencies to the 'requirements' setting (<code>requirements = dep1 dep2</code> etc) with multiple requirements separated by a single space. A set of test_flags have already been added (<code>tst_flags = test_flag_colab|test_flag_deps|test_flag_GPU|test_flag_slow|test_flag_large|test_flag_other</code>). These can be customized if needed. Commit the new <code>settings.ini</code> to save the changes.</p>
 </li>
 <li><p>Activate GitHub Pages to display automatic documentation: click on 'Settings', then scroll down to GitHub Pages and select 'master branch/docs folder'. Edit the repo description by adding the auto-generated GitHub Pages link to the box next to the repo description at the top of the page.</p>
 </li>
 <li><p>Finally, clone the new repo to your Google Drive. A detailed description of how, and helpful tools to accomplish this, are provided by nbds-colabs's sister library, nbd_colab. The nbd_colab <a href="https://github.com/hallmx/nbd_colab">documentation</a> will guide you through installing nbd_colab and then cloning the new repo to your Google Drive as well as configuring it for GitHub integration.</p>
 </li>
 </ul>
-<p>Once cloned and configured on your Google Drive, the template repo now becomes your project template in your project directory and has full GitHub integration. In addition, the project notebooks are all set up out of the box to support automatic documentation generation and integrated testing wth nbdev. Every time you work with a notebook you just have to remember to run the cells at the top of the notebook to mount Google Drive, pip install nbdev and fastcore, and <code>%cd</code> into the project directory.</p>
+<p>Once cloned and configured on your Google Drive, the template repo now becomes the project template its own project directory and has full GitHub integration. Out of the box, the project notebooks are set up to support automatic documentation generation and integrated testing courtesy of nbdev. Every time you work with a notebook you just have to remember to run the cells at the top of the notebook to mount Google Drive, pip install nbdev and fastcore, and <code>%cd</code> into the project directory. These cells are flagged <code>#hide</code>, so they don't appear in the automated documentation.</p>
 
 </div>
 </div>
@@ -133,7 +133,7 @@ summary: "Literate programming for data science using nbdev, jupytemplate and Go
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The jupyter notebook data science templates are adapted from <a href="https://github.com/xtreamsrl/jupytemplate">xstreamsrl's jupytemplate</a> project, where the aim is to provide a greater degree of structure and standardization to data science projects. Here we take the natural next step and place them into a literate programming environment. Dive in and edit them as needed for your project.</p>
+<p>The data science templates are adapted from <a href="https://github.com/xtreamsrl/jupytemplate">xstreamsrl's jupytemplate</a> project, where the aim is to provide a greater degree of structure and standardization to data science projects. Here we take the natural next step and place them into a literate programming environment. Dive in and edit them as needed for your project.</p>
 
 </div>
 </div>

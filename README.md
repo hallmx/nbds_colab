@@ -8,24 +8,24 @@ Nbds_colab is a template repository for small to medium sized data science proje
 
 * Google Colaboratory & Drive - low cost cloud computing with acceleration [Colaboratory](https://colab.research.google.com/)
 
-* Jupytemplate - standardized notebooks for data science [Xstreamrl](https://github.com/xtreamsrl/jupytemplate)
+* Jupytemplate - standardized notebooks for data science [xstreamsrl](https://github.com/xtreamsrl/jupytemplate)
 
 * Full GitHub integration
 
 
 ## Getting started
 
-The following assumes a working knowledge of the nbdev exploratory programming system, jupiter notebooks, Google Colaboratory (Colab), Google Drive and GitHub. For more information on nbdev view the [nbdev documentation](http://nbdev.fast.ai/) and on how nbdev works with Google Colaboratory [nbd_colab docs]((https://github.com/hallmx/nbd_colab).
+The following assumes a working knowledge of the nbdev exploratory programming system, Jupiter notebooks, Google Colaboratory (Colab), Google Drive and GitHub. For more information on nbdev view the [nbdev documentation](http://nbdev.fast.ai/) and on how nbdev works with Google Colaboratory, the [nbd_colab docs]((https://github.com/hallmx/nbd_colab).
 
 * Make sure you are logged in to your GitHub account then click [nbds_colab_template](https://github.com/hallmx/nbds_colab/generate) to go to the template repo on GitHub. Enter a name for your project and click 'Create repository from template'. A new repo based on the template will be created in your GitHUb.
 
-* From GitHub, edit the `settings.ini` file of the new repo with your own personal and package information as described in the nbdev [documentation](http://nbdev.fast.ai/) and [tutorial](http://nbdev.fast.ai/tutorial/). Add any dependencies to the 'requirements' setting (requirements = dep1, dep2 etc). A set of test_flags have already been added (tst_flags = test_flag_colab|test_flag_deps|test_flag_GPU|test_flag_slow|test_flag_large|test_flag_other). These can be customized if needed. Commit the new `settings.ini` to save the changes. 
+* From GitHub, edit the `settings.ini` file of the new repo with your own personal and package information as described in the nbdev [documentation](http://nbdev.fast.ai/) and [tutorial](http://nbdev.fast.ai/tutorial/). Add any dependencies to the 'requirements' setting (`requirements = dep1 dep2` etc) with multiple requirements separated by a single space. A set of test_flags have already been added (`tst_flags = test_flag_colab|test_flag_deps|test_flag_GPU|test_flag_slow|test_flag_large|test_flag_other`). These can be customized if needed. Commit the new `settings.ini` to save the changes. 
 
 * Activate GitHub Pages to display automatic documentation: click on 'Settings', then scroll down to GitHub Pages and select 'master branch/docs folder'. Edit the repo description by adding the auto-generated GitHub Pages link to the box next to the repo description at the top of the page.
 
 * Finally, clone the new repo to your Google Drive. A detailed description of how, and helpful tools to accomplish this, are provided by nbds-colabs's sister library, nbd_colab. The nbd_colab [documentation](https://github.com/hallmx/nbd_colab) will guide you through installing nbd_colab and then cloning the new repo to your Google Drive as well as configuring it for GitHub integration.
 
-Once cloned and configured on your Google Drive, the template repo now becomes your project template in your project directory and has full GitHub integration. In addition, the project notebooks are all set up out of the box to support automatic documentation generation and integrated testing wth nbdev. Every time you work with a notebook you just have to remember to run the cells at the top of the notebook to mount Google Drive, pip install nbdev and fastcore, and `%cd` into the project directory. 
+Once cloned and configured on your Google Drive, the template repo now becomes the project template its own project directory and has full GitHub integration. Out of the box, the project notebooks are set up to support automatic documentation generation and integrated testing courtesy of nbdev. Every time you work with a notebook you just have to remember to run the cells at the top of the notebook to mount Google Drive, pip install nbdev and fastcore, and `%cd` into the project directory. These cells are flagged `#hide`, so they don't appear in the automated documentation. 
 
 
 
@@ -73,7 +73,7 @@ Now you can build the project library with `nbdev_build_lib` and documentation w
 
 ## The data science templates
 
-The jupyter notebook data science templates are adapted from [xstreamsrl's jupytemplate](https://github.com/xtreamsrl/jupytemplate) project, where the aim is to provide a greater degree of structure and standardization to data science projects. Here we take the natural next step and place them into a literate programming environment. Dive in and edit them as needed for your project. 
+The data science templates are adapted from [xstreamsrl's jupytemplate](https://github.com/xtreamsrl/jupytemplate) project, where the aim is to provide a greater degree of structure and standardization to data science projects. Here we take the natural next step and place them into a literate programming environment. Dive in and edit them as needed for your project. 
 
 
 

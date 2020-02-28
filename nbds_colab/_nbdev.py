@@ -12,8 +12,7 @@ index = {"core_test": "00_core.ipynb",
          "common_test": "11_common.ipynb",
          "vis_test": "12_vis.ipynb",
          "dataproc_test": "13_dataproc.ipynb",
-         "data_test": "14_data.ipynb",
-         "refs_test": "15_refs.ipynb"}
+         "data_test": "14_data.ipynb"}
 
 modules = ["core.py",
            "dstemplate1.py",
@@ -25,8 +24,7 @@ modules = ["core.py",
            "common.py",
            "vis.py",
            "dataproc.py",
-           "data.py",
-           "refs.py"]
+           "data.py"]
 
 doc_url = "https://hallmx.github.io/nbds_colab/"
 
